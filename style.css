@@ -531,6 +531,9 @@ input[type="text"]
 	
 }
 
+/********************************************************************
+/*******************DISABLE MASSACRE STARTS HERE*********************
+***********************************************************************/
 
 .sidebar
 {
@@ -593,6 +596,9 @@ input[type="text"]
 {
 	padding: 5px 5px;
 }
+/********************************************************************
+/*******************DISABLE MASSACRE ENDS HERE*********************
+***********************************************************************/
 
 #page
 {
@@ -1110,17 +1116,20 @@ ul.dropdown li a
 .social_1 
 {
 	background-image:url(images/social_bg.png);
-	background-position: center;
 	width:285px;
 	height:100px;
+	
 	}
 	
 .side_text_1
 {
 	color:#FFF;
-	font-size: 13px;
-	text-align:justify;
-	padding: 20px 0px 0px 15px;
+	font-size: 15px;
+	padding-left: 7px;
+	padding-right: 10px;
+	width:285px;
+	height:100px;
+	padding-top: 5px;
 	
 	}
 	
@@ -1167,19 +1176,31 @@ ul.dropdown li a
 
 .sidebar_2 li h3 
 {
-	padding:3px 3px 3px 3px;
-	margin:0px 0px 10px 0px;
+	margin:0px 0px 5px 0px;
 	line-height:normal;
-	position:relative;
 	text-shadow:none;
 	font-weight:normal;
-	font-size:14px;
-    color: #FFF;
-	background:#3398db;
+	padding-left: 5px;
+	font-size:16px;
+	color:#FFF;
+	padding-top: 3px;
+	font-family: 'Adamina', serif;
 
 }
 
 .sidebar_2 .text
 {
-	padding: 5px 5px;
+	font-size: 13px;
+	color: #013d45;
+	border-top: dashed 1px #FFF;
+	padding-top: 5px;
+	max-width: 155px;
+	font-weight:bold;
+}
+
+.sidebar_2 .text a
+{
+	text-decoration: none;
+	font-weight:normal !important;
+	color:#FFF;
 }
