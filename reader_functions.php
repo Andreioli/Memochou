@@ -29,7 +29,8 @@ if(!function_exists('get_sidebar'))
 	{
 		$echo = '';
 		$echo .= '<ul class="sidebar_2">';
-		if(get_setting_irc())$echo .= '<li class="social_1"><h3>Social Integration</h3><span class="side_text_1">'._("Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show ").'</span></li>';
+		if(get_setting_irc())$echo .= '<li class="social_1"><h3>Social Integration</h3><div class="side_text_1">'. get_twitter_widget() .'<br />
+'. get_irc_widget() .'</div></li>';
 		if(get_setting_twitter())$echo .= '<li><h3>Twitter</h3>'._("Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television program").'</li>';
 		if(get_setting_facebook())$echo .= '<li><h3>Facebook	</h3>'._("a").'</li>';
 		$echo .= '</ul>';
@@ -68,9 +69,10 @@ if(!function_exists('get_twitter_widget'))
 	function get_twitter_widget($team = NULL)
 	{
 		$twitter = get_setting_twitter($team);
-		$echo = sprintf(_('%sFollow us%s on Twitter'),'<a href="http://twitter.com/intent/user?screen_name='.urlencode($twitter).'">', '<img src="'.site_url().'assets/images/bird_16_blue.png" /></a>' );
-		return '<div class="text">'.$echo.'</div>';
+		$echo = "<iframe allowtransparency='true' frameborder='0' scrolling='no' src=//platform.twitter.com/widgets/follow_button.html?screen_name=".urlencode($twitter)."&show_count=false&link_color=ffffff&text_color=ffffff' style='width:300px; height:20px;'></iframe>";
+		return $echo;
 	}
+			
 }
 
 /**
@@ -105,7 +107,7 @@ if(!function_exists('get_irc_widget'))
 	{
 		$irc = get_setting_irc($team);
 		
-		$echo = _('Come chat with us on') . ' <a href="'.parse_irc($irc).'">' . $irc . '</a>';
+		$echo = _('• Come chat with us on:<br />') . ' <a href="'.parse_irc($irc).'">' . $irc . '</a>';
 		return '<div class="text">'.$echo.'</div>';
 	}
 }
