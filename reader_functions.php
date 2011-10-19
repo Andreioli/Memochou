@@ -29,10 +29,9 @@ if(!function_exists('get_sidebar'))
 	{
 		$echo = '';
 		$echo .= '<ul class="sidebar_2">';
-		if(get_setting_irc())$echo .= '<li class="social_1"><h3>Social Integration</h3><div class="side_text_1">'. get_twitter_widget() .'<br />
-'. get_irc_widget() .'</div></li>';
-		if(get_setting_twitter())$echo .= '<li><h3>Twitter</h3>'._("Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television program").'</li>';
-		if(get_setting_facebook())$echo .= '<li><h3>Facebook	</h3>'._("a").'</li>';
+		if(get_setting_irc()&&get_setting_twitter())$echo .= '<li class="social_module"><h3>Social Integration</h3><div class="social_text">'. get_twitter_widget() .'<br />'. get_irc_widget() .'</div></li>';
+		$echo .= '<li class="rss_module"><h3>Site Updates</h3><div class="social_text">'._("coming soon").'</div></li>';
+		if(get_setting_facebook())$echo .= '<li class="facebook_module"><h3>Facebook</h3><div class="social_text">'._("Some lipsum text and like button here...").'</div></li>';
 		$echo .= '</ul>';
 		return $echo;
 	}
