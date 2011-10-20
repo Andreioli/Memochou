@@ -928,9 +928,9 @@ ul.dropdown li a
 	-webkit-box-shadow: 0px 0px 1px #ddd, inset 0px 0px 8px #222;
 	-moz-box-shadow: 0px 0px 1px #ddd, inset 0px 0px 8px #222;
 
-    border-radius:5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
+    border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
 }
 
 #bottombar .pagenumber{
@@ -1113,7 +1113,7 @@ ul.dropdown li a
 
 }
 
-.social_1 
+.social_module 
 {
 	background-image:url(images/social_bg.png);
 	width:285px;
@@ -1121,7 +1121,26 @@ ul.dropdown li a
 	
 	}
 	
-.side_text_1
+.rss_module
+
+{
+	background-image:url(images/rss_bg.png);
+	width:285px;
+	height:100px;
+
+}
+	
+	
+.facebook_module
+
+{
+	background-image:url(images/facebook_bg.png);
+	width:285px;
+	height:100px;
+
+}	
+	
+.social_text
 {
 	color:#FFF;
 	font-size: 15px;
@@ -1133,11 +1152,11 @@ ul.dropdown li a
 	
 	}
 	
-.side_text_2 
+.rss_text
 {
 	}
 	
-.side_text_3
+.facebook_text
 {
 	}
 	
@@ -1194,7 +1213,7 @@ ul.dropdown li a
 	color: #013d45;
 	border-top: dashed 1px #FFF;
 	padding-top: 5px;
-	max-width: 155px;
+	max-width: 180px;
 	font-weight:bold;
 }
 
