@@ -15,7 +15,7 @@
 				if ($opendiv) {
 					echo '</div>';
 				}
-				echo '<div class="group"><div class="title">'.$chapter->comic->url().'</div>';
+				echo '<div class="last_group"><div class="title">'.$chapter->comic->url().'</div>';
 				$current_comic = $chapter->comic_id;
 			}
 			
