@@ -11,7 +11,7 @@ body
     margin:0 auto;
     overflow-y:scroll !important;
     background:#fafafa;
-	background:url('images/bg_art.PNG');
+	background:url('images/bg_art.png');
 }
 
 #wrapper 
@@ -144,6 +144,7 @@ input[type="text"]
 {
 	background:#333333;
 	color:#ffffff;
+	max-height:40px;
 	border-top:none;
 	
 	
@@ -178,14 +179,6 @@ input[type="text"]
 #header #title:hover
 {
     text-decoration:none;
-}
-
-#header .home_url
-{
-    float:left;
-    margin:8px 5px 0;
-    padding-top:6px;
-    font-size:11px;
 }
 
 #footer
@@ -249,8 +242,8 @@ input[type="text"]
 #navig ul
 {
     list-style:none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     display:block;
 }
 
@@ -309,14 +302,12 @@ input[type="text"]
 .list
 {
     margin:0 0 6px;
-
     overflow:hidden;
     z-index:-1;
 	background:#f7f7f7;
 	background-image:url("images/body_list.png");
 	border:solid #999 1px;
 	border-bottom: solid #333333 4px;
-
     padding:6px 5px;
 	
 	/* DISABLE FROM DEFAULT*/
@@ -363,6 +354,7 @@ input[type="text"]
 
 .list .group
 {
+
 	border-bottom:1px solid #CCC;
 	margin-top:8px;
 	padding-bottom:8px;
@@ -370,8 +362,32 @@ input[type="text"]
 	overflow:hidden;
 }
 
-.list .group:hover
+.last_group {
+
+	margin-top:8px;
+	padding-bottom:8px;
+	position:relative;
+	overflow:hidden;
+	
+}
+
+.list .last_group > .title
+
 {
+
+	font-weight:bold;
+	font-family: 'Adamina', serif;
+	color:#3398db;
+	text-decoration:none;
+	font-size:16px;
+	border-bottom:1px solid #666;
+}
+
+.list .last_group > .title a:hover
+{
+
+	color: #333;
+	text-decoration:none;
 
 }
 
@@ -474,7 +490,8 @@ input[type="text"]
 	box-shadow: 0px 0px 1px #fff, inset 0px 0px 2px #777;
 	-webkit-box-shadow: 0px 0px 1px #fff, inset 0px 0px 2px #777;
 	-moz-box-shadow: 0px 0px 1px #fff, inset 0px 0px 2px #777;
-	 z-index:-1;
+	z-index:-1;
+	width:988px;
     overflow:hidden;
 	
 	/* DISABLE FROM DEFAULT*/
@@ -1106,10 +1123,10 @@ ul.dropdown li a
 	
 #footer_bar {
 
-	text-align: center;
-	margin-left: 10%;
-	margin-right: 11%;
-	max-width: 1000px;
+	max-width: 960px;
+	min-height:131px;
+    padding:0px 10px 19px;
+	margin:0 auto;
 
 }
 
@@ -1164,17 +1181,16 @@ ul.dropdown li a
 /* Down here, it's just the result of my laziness, I will fix it in future versions. - please move ahead ¬( ºWº)¬ */
 /*=======================================================================================================
 */
-	
+
 .sidebar_2
 {
-	padding:7px 10px;
+
 	overflow:hidden;
-	text-align:center;
-	vertical-align:middle;
 	float:none;
-	margin:0 0 10px 10px;
+	max-width:950px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	width: auto;
-	z-index:-1;
 	list-style: none;
 }
 
@@ -1213,7 +1229,7 @@ ul.dropdown li a
 	color: #013d45;
 	border-top: dashed 1px #FFF;
 	padding-top: 5px;
-	max-width: 180px;
+	max-width: 174px;
 	font-weight:bold;
 }
 
