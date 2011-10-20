@@ -63,6 +63,8 @@
 				<div role="navigation" id="navig">
 					<ul>
 						<li>
+                        <?php if (get_setting('fs_gen_back_url')) echo '<a href="' . get_setting('fs_gen_back_url').'">'._('Go back to site').' </a>'; ?></li>
+						<li>
 							<a href="<?php echo site_url('/reader/') ?>"><?php echo _('Latest releases'); ?></a>
 						</li>
 						<li>
@@ -84,8 +86,6 @@
 				</div>
 
 				<a href="<?php echo site_url('/reader/') ?>"><div id="title"><?php echo get_setting('fs_gen_site_title') ?></div></a> 
-				<?php if (get_setting('fs_gen_back_url'))
-					echo'<div class="home_url"><a href="' . get_setting('fs_gen_back_url') . '">' . _("Go back to site") . ' &crarr;</a></div>'; ?>
 				<div class="clearer"></div>	
 			</div>
 
