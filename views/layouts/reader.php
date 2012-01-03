@@ -23,6 +23,7 @@
 		<script src="<?php echo site_url() . 'assets/js/jquery.js?v='.FOOLSLIDE_VERSION ?>"></script>
 		<script src="<?php echo site_url() . 'assets/js/jquery.plugins.js?v='.FOOLSLIDE_VERSION ?>"></script>
 		<script type="text/javascript">
+		
 			jQuery(document).ready(function(){
 <?php if ($this->agent->is_browser('MSIE'))
 { ?>
@@ -54,6 +55,20 @@
 		<?php echo get_setting('fs_theme_header_code'); ?>
 
 	</head>
+    
+    <!-- FACEBOOK CODE BEGIN HERE! -->
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+    <!-- FACEBOOK CODE END HERE! -->
+
 	<body class="<?php if (isset($_COOKIE["night_mode"]) && $_COOKIE["night_mode"] == 1)
 			echo 'night '; ?>">
 		<div id="wrapper">

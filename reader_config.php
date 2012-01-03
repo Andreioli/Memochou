@@ -7,10 +7,10 @@ if (!defined('BASEPATH'))
 // name, description of this theme...
 $config['theme_directory'] = 'Memochou';
 $config['theme_name'] = 'Memochou';
-$config['theme_description'] = 'Alternative no sidebar theme for FoOlslide';
-$config['theme_tags'] = array('Memochou', 'no-sidebar', 'alternative', 'images', 'footer');
+$config['theme_description'] = 'Memochou is a colorful theme for FoOlSlide with some personality.';
+$config['theme_tags'] = array('Memochou', 'Alternative', 'footer');
 // for the default theme, this is the last FoOlSlide version there were changes to it
-$config['theme_version'] = '0.1.4';
+$config['theme_version'] = '0.1.8';
 
 // some personal data on the author
 $config['theme_author'] = 'dHEKU';

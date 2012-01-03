@@ -991,7 +991,7 @@ ul.dropdown li a
     text-align:center;
     font-size:14px;
     font-family: Cambria, Georgia, Times, Times New Roman, serif;
-    border: 1px dashed #999;
+    border: 1px dashed #F33;
 }
 
 .topbar_right .number a
@@ -1008,12 +1008,11 @@ ul.dropdown li a
 
 .topbar_right .number.loaded
 {
-    border:1px solid #999;
-}
+    border:1px solid #00592D;}
 
 .topbar_right .number:hover
 {
-    border:1px solid #444;
+    border:1px solid #001C00;
 }
 
 .tbtitle{
@@ -1124,7 +1123,6 @@ ul.dropdown li a
 #footer_bar {
 
 	max-width: 960px;
-	min-height:131px;
     padding:0px 10px 19px;
 	margin:0 auto;
 

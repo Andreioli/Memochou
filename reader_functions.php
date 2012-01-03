@@ -29,9 +29,9 @@ if(!function_exists('get_sidebar'))
 	{
 		$echo = '';
 		$echo .= '<ul class="sidebar_2">';
-		if(get_setting_irc()&&get_setting_twitter())$echo .= '<li class="social_module"><h3>Social Integration</h3><div class="social_text">'. get_twitter_widget() .'<br />'. get_irc_widget() .'</div></li>';
-		$echo .= '<li class="rss_module"><h3>Site Updates</h3><div class="social_text">'._("coming soon").'</div></li>';
-		if(get_setting_facebook())$echo .= '<li class="facebook_module"><h3>Facebook</h3><div class="social_text">'._("Some lipsum text and like button here...").'</div></li>';
+		if(get_setting_irc()&&get_setting_twitter())$echo .= '<li class="social_module"><h3>'._("Social Integration").'</h3><div class="social_text">'. get_twitter_widget() .'<br />'. get_irc_widget() .'</div></li>';
+		$echo .= '<li class="rss_module"><h3>'._("Social Integration").'</h3><div class="social_text">'._("coming soon").'</div></li>';
+		if(get_setting_facebook())$echo .= '<li class="facebook_module"><h3>Facebook</h3><br /><div class="social_text">'. get_facebook_widget() .'</div></li>';
 		$echo .= '</ul>';
 		return $echo;
 	}
@@ -96,7 +96,7 @@ if(!function_exists('get_setting_irc'))
  * Returns IRC widget for the team
  * If $team is not set, it returns the home team's irc widget
  * 
- * @param string team name
+ * @param string team namo
  * @author Woxxy
  * @return string irc widget for the team
  */
@@ -143,7 +143,7 @@ if(!function_exists('get_facebook_widget'))
 	{
 		$facebook = get_setting_facebook($team);
 		
-		$echo = "<iframe src='http://www.facebook.com/plugins/likebox.php?href=".urlencode($facebook)."&amp;width=290&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=true&amp;height=387' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:290px; height:387px; background:#fff; background:rgba(255,255,255,.5)' allowTransparency='true'></iframe>";
+		$echo = "<div class='fb-like' data-href=".urlencode($facebook)." data-send='false' data-width='280' data-show-faces='false' data-colorscheme='dark'></div>";
 		return $echo;
 	}
 }
