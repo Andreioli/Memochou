@@ -30,8 +30,8 @@ if(!function_exists('get_sidebar'))
 		$echo = '';
 		$echo .= '<ul class="sidebar_2">';
 		if(get_setting_irc()&&get_setting_twitter())$echo .= '<li class="social_module"><h3>'._("Social Integration").'</h3><div class="social_text">'. get_twitter_widget() .'<br />'. get_irc_widget() .'</div></li>';
-		$echo .= '<li class="rss_module"><h3>'._("Social Integration").'</h3><div class="social_text">'._("coming soon").'</div></li>';
-		if(get_setting_facebook())$echo .= '<li class="facebook_module"><h3>Facebook</h3>'._(" - - - - - -Like us on Facebook:").'<div class="social_text">'. get_facebook_widget() .'</div></li>';
+		$echo .= '<li class="rss_module"><h3>'._("News").'</h3><div class="social_text">'._("coming soon").'</div></li>';
+		if(get_setting_facebook())$echo .= '<li class="facebook_module"><h3>Facebook</h3>'._(" - - - - - - Like us on Facebook:").'<div class="social_text">'. get_facebook_widget() .'</div></li>';
 		$echo .= '</ul>';
 		return $echo;
 	}

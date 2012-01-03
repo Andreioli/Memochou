@@ -226,7 +226,7 @@
 					<?php echo get_setting('fs_gen_footer_text'); ?>
 				</div>
 				<div class="cp_link">
-					<a href="http://wiki.foolslide.org" target="_blank"><img src="<?php echo site_url() . 'content/themes/default/images/logo_footer.png' ?>" /></a>
+					<a href="http://wiki.foolslide.org" target="_blank"><img src="<?php echo site_url() . 'content/themes/Memochou/images/logo_footer.png' ?>" /></a>
 				</div>
 			</div>
 		</div>
